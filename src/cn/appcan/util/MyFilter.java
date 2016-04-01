@@ -53,8 +53,9 @@ public class MyFilter implements Filter {
 		res.setContentType("text/html;charset=utf-8");
 		PrintWriter out = res.getWriter();
 
+		path = "/opt/myftp/ftphome/pub";
 		if (url.indexOf("path_linux") != -1){
-			path = "/home/restful";
+			path = "/opt/myftp/ftphome/pub";
 			out.println("file save "+path);
 			out.flush();
 			return;
